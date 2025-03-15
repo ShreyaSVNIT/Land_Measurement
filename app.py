@@ -1,3 +1,6 @@
+import sys
+print(sys.version)
+print(sys.path)
 from flask import Flask, request, jsonify, render_template
 import cv2
 import numpy as np
@@ -12,7 +15,7 @@ from geographiclib.geodesic import Geodesic
 app = Flask(__name__)
 
 # Configuration
-PROCESSED_DIR = r"D:\Coding\VSCODE\AI 0\static\processed_images" # Add your path
+PROCESSED_DIR = r"/Users/shreyuuu/Desktop/Land_Measurement_App/static"
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 
 # Global variables
